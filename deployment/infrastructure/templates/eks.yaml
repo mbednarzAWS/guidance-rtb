@@ -10,7 +10,7 @@ Parameters:
   EksClusterVersion:
     Type: String
     Description: Version of EKS cluster
-    Default: '1.31'
+    Default: '1.32'
 
   EksVpcId:
     Type: String
@@ -35,7 +35,7 @@ Parameters:
   NodeGroupReleaseVersion:
     Type: String
     Description: Release version of the Node group
-    Default: "1.31.7-20250519"
+    Default: "1.32.9-20251016"
 
   BasicArmNodeGroupSize:
     Type: Number
