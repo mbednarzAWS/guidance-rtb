@@ -232,7 +232,6 @@ Resources:
       NodeRole:
         !Ref EksWorkerRoleArn
       AmiType: AL2_ARM_64
-      ReleaseVersion: !Ref NodeGroupReleaseVersion
       CapacityType: ON_DEMAND #SPOT
       InstanceTypes: !Ref BasicArmInstanceType
       ScalingConfig:
@@ -254,7 +253,6 @@ Resources:
       NodeRole:
         !Ref EksWorkerRoleArn
       AmiType: AL2_x86_64
-      ReleaseVersion: !Ref NodeGroupReleaseVersion
       CapacityType: ON_DEMAND #SPOT
       InstanceTypes: !Ref BasicX86InstanceType
       ScalingConfig:
@@ -275,7 +273,6 @@ Resources:
       ClusterName: !Ref EksClusterName
       NodeRole: !Ref EksWorkerRoleArn
       AmiType: !Ref ApplicationAmiType
-      ReleaseVersion: !Ref NodeGroupReleaseVersion
       CapacityType: !Ref ApplicationCapacityType
       InstanceTypes: !Ref ApplicationInstanceType
       ScalingConfig:
@@ -303,7 +300,6 @@ Resources:
       NodeRole:
         !Ref EksWorkerRoleArn
       AmiType: !Ref BenchmarkAmiType
-      ReleaseVersion: !Ref NodeGroupReleaseVersion
       CapacityType: !Ref BenchmarkCapacityType
       InstanceTypes: !Ref BenchmarkInstanceType
       ScalingConfig:
@@ -331,7 +327,6 @@ Resources:
       NodeRole:
         !Ref EksWorkerRoleArn
       AmiType: !Ref AerospikeAmiType
-      ReleaseVersion: !Ref NodeGroupReleaseVersion
       CapacityType: !Ref AerospikeCapacityType
       InstanceTypes: !Ref AerospikeInstanceType
       ScalingConfig:
