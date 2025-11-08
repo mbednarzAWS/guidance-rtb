@@ -40,7 +40,7 @@ Parameters:
   BasicArmNodeGroupSize:
     Type: Number
     Description: Number of nodes in basic ARM node group
-    Default: '2'
+    Default: '4'
 
   BasicArmInstanceType:
     Type: CommaDelimitedList
@@ -50,7 +50,7 @@ Parameters:
   BasicX86NodeGroupSize:
     Type: Number
     Description: Number of nodes in basic x86 node group
-    Default: '2'
+    Default: '4'
 
   BasicX86InstanceType:
     Type: CommaDelimitedList
@@ -65,7 +65,7 @@ Parameters:
   ApplicationNodeGroupSizeMax:
     Type: Number
     Description: Maximum number of nodes in application node group
-    Default: '0'
+    Default: '4'
 
   ApplicationInstanceType:
     Type: CommaDelimitedList
@@ -90,7 +90,7 @@ Parameters:
   BenchmarkNodeGroupSizeMax:
     Type: Number
     Description: Maximum number of nodes in benchmark node group
-    Default: '0'
+    Default: '2'
 
   BenchmarkInstanceType:
     Type: CommaDelimitedList
@@ -110,7 +110,7 @@ Parameters:
   AerospikeNodeGroupSize:
     Type: Number
     Description: Number of nodes in node group for Aerospike
-    Default: '0'
+    Default: '2'
 
   AerospikeInstanceType:
     Type: CommaDelimitedList
