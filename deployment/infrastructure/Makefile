@@ -223,7 +223,7 @@ eks@cleanup: ## Remove application from EKS
 	_=$(helm uninstall model 2>/dev/null)
 
 publisher-eks@provision:
-    cat deployment/infrastructure/publisher-eks/cluster.yaml | envsubst '${AWS_REGION}' | eksctl create cluster -f  -
+	cat deployment/infrastructure/publisher-eks/cluster.yaml | envsubst '${AWS_REGION}' | eksctl create cluster -f  -
 	kubectl apply -f deployment/infrastructure/publisher-eks/nodepool.yaml
 
 ## All variables passed to the load generator are listed here with their defaults; remember to specify duration unit.
